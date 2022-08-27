@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset=utf-8">
+
+<head>
+<img src="automorfismo_a.jpg" height="50%" width="100%"></>
+<h1 style="color:blue;" align="center"> Teoria Geométrica de Grupos </h1>
+<title> Teoria Geométrica de Grupos </title>
+</head>
+
+<body>
+<h2 style="color:blue;" align="center"> Definições e Exemplos </h2> 
+<hr>
+<p style="color:blue;"> A Teoria Geométrica de Grupos tem como objetivo estudar grupos de forma <em>geométrica</em>. 
+Para entendermos um pouco melhor, veremos abaixo algumas ideias. </p>
+
+
+
+<!-- assume chapter 1 before -->
+
+<section id="chapter1">
+
+<header>
+<h1>Definições</h1>
+</header>
+
+<p>1 - Um grupo é um par <span class="math display">(<em>G</em>,⋅)</span>, formado por um conjunto G não-vazio e com uma 
+operação binária <spanclass="math display"> ⋅  : <em>G</em> × <em>G</em> &#10141; <em>G</em></span>, 
+tendo as seguintes propriedades: </p>
+
+
+<ol>
+
+<li>Para quaisquer <span
+class="math display"><em>a</em>, <em>b</em>, <em>c</em> ∈ <em>G</em>, <em> a </em>⋅ (<em>b</em>⋅<em>c</em>) = (<em>a</em>⋅<em>b</em>) ⋅ <em>c</em></span></li>
+
+<li><span
+class="math display"><em>E</em><em>x</em><em>i</em><em>s</em><em>t</em><em>e</em> <em>e</em> ∈ <em>G</em> <em>t</em><em>a</em><em>l</em> <em>q</em><em>u</em><em>e</em> <em>a</em> ⋅ <em>e</em> = <em>a</em>, <em>p</em><em>a</em><em>r</em><em>a</em> <em>t</em><em>o</em><em>d</em><em>o</em> <em>a</em> ∈ <em>G;</em></span></li>
+
+
+<li><span
+class="math display"><em>P</em><em>a</em><em>r</em><em>a</em> <em>t</em><em>o</em><em>d</em><em>o</em> <em>a</em> ∈ <em>G</em>, <em>e</em><em>x</em><em>i</em><em>s</em><em>t</em><em>e</em> <em>a</em><sup>−1</sup> ∈ <em>G</em> <em>t</em><em>a</em><em>l</em> s<em>q</em><em>u</em><em>e</em> <em>a</em> ⋅ <em>a</em><sup>−1</sup> = <em>e</em>.</span></li>
+
+</ol>
+
+
+<p><span
+class="math display">  <em>2 - Um grupo G é finitamente gerado se existe um conjunto finito </em> <em>S</em> = {<em>s</em><sub>1</sub>, …, <em>s</em><sub><em>n</em></sub>}
+ <em> de G tal que todo elemento </em> <em>g</em> ∈ <em>G</em> <em>é escrito como o produto</em> 
+<em>s</em><sub>1</sub><sup><em>k</em><sub>1</sub></sup>⋯<em>s</em><sub><em>n</em></sub><sup><em>k</em><sub><em>n</em></sub></sup>,
+ <em>onde </em> <em>k</em><sub>1</sub>, …, <em>k</em><sub><em>n</em></sub> ∈ ℤ.</span></p>
+
+
+<p><span
+class="math display"><em>3 - S</em><em>e</em><em>j</em><em>a</em><em>m</em> <em>G</em><em> u</em><em>m</em> <em>g</em><em>r</em><em>u</em><em>p</em><em>o</em> <em>f</em><em>i</em><em>n</em><em>i</em><em>t</em><em>a</em><em>m</em><em>e</em><em>n</em><em>t</em><em>e</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em> <em>e</em> <em>S</em> = {<em>s</em><sub>1</sub>, …, <em>s</em><sub><em>k</em></sub>} <em>u</em><em>m</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em><em>r</em> <em>p</em><em>a</em><em>r</em><em>a</em> <em>G</em>. <em>O</em> <em>comprimento
+de uma
+palavra</em> <em>g</em> ∈ <em>G</em>, <em>q</em><em>u</em><em>e</em> <em>e</em><em>s</em><em>c</em><em>r</em><em>e</em><em>v</em><em>e</em><em>m</em><em>o</em><em>s</em> <em>c</em><em>o</em><em>m</em><em>o</em> ℓ<sub><em>S</em></sub>(<em>g</em>), <em>é</em> <em>o</em> <em>n</em><em>ú</em><em>m</em><em>e</em><em>r</em><em>o </em><em>n</em><em>a</em><em>t</em><em>u</em><em>r</em><em>a</em><em>l</em></span></p>
+
+<p align="center"> <span
+class="math display">ℓ<sub><em>S</em></sub>(<em>g</em>) = min{<em>n</em> ∈ ℕ<sup>+</sup>| <em>g</em>
+=<em>s</em><sub>1</sub><sup><em>k</em>1</sup>⋅<em>s</em><sub>2</sub><sup><em>k</em>2</sup>⋯<em>s</em><sub><em>p</em></sub><sup><em>k</em><em>p</em></sup>⇒|<em>k</em><sub>1</sub>|+|<em>k</em><sub>2</sub>|+⋯+|<em>k</em><sub><em>p</em></sub>| = <em>n</em>}.</span> </p> 
+
+
+
+<p><span class="math display"><em>4 - Uma métrica em um conjunto G é uma
+função</em> <em>d</em> : <em>G</em> × <em>G</em> &#10141; ℝ <em>que associa a
+cada par
+ordenado</em> (<em>x</em>,<em>y</em>) ∈ <em>G</em> × <em>G</em> <em>o
+número real</em> <em>d</em>(<em>x</em>,<em>y</em>), <em>o qual
+denominamos a distância de x até y, com as seguintes propriedades para
+quaisquer </em><em>x</em>, <em>y</em>, <em>z</em> ∈ <em>G</em>:</span></p>
+
+<ol>
+
+<li> <span
+class="math display"><em>d</em>(<em>x</em>,<em>x</em>) = 0;</span> </li>
+
+
+<li>  <span class="math display"><em>Se x</em> ≠ <em>y então
+d(x,y) &gt; 0</em>,</span> </li>
+
+
+
+<li> <span class="math display"><em>d(x,y)=d(y,x);</em></span> </li>
+
+
+<li> <span class="math display"><em>d(x,z) ≤
+d(x,y) + d(y,z).</em></span> </li>
+
+</ol>
+
+
+<p><span
+class="math display"><em>5 - S</em><em>e</em><em>j</em><em>a</em> <em>G</em> <em>u</em><em>m</em> <em>g</em><em>r</em><em>u</em><em>p</em><em>o</em> <em>f</em><em>i</em><em>n</em><em>i</em><em>t</em><em>a</em><em>m</em><em>e</em><em>n</em><em>t</em><em>e</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em> <em>p</em><em>o</em><em>r</em> <em>S</em>. <em>A
+métrica da
+palavra</em> <em>é</em> <em>u</em><em>m</em><em>a</em> <em>f</em><em>u</em><em>n</em><em>ç</em><em>ã</em><em>o</em> <em>d</em><sub><em>S</em></sub> : <em>G</em> × <em>G</em> &#10141; ℕ<sup>+</sup>, <em>o</em><em>n</em><em>d</em><em>e</em> <em>d</em><sub><em>S</em></sub>(<em>g</em>,<em>h</em>) = ℓ<sub><em>S</em></sub>(<em>g</em><sup>−1</sup><em>h</em>).</span></p>
+
+
+
+<p><span
+class="math display"><em>6 - S</em><em>e</em><em>j</em><em>a</em> <em>G</em> <em>u</em><em>m</em> <em>g</em><em>r</em><em>u</em><em>p</em><em>o</em> <em>f</em><em>i</em><em>n</em><em>i</em><em>t</em><em>a</em><em>m</em><em>e</em><em>n</em><em>t</em><em>e</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em> <em>p</em><em>o</em><em>r</em> <em>S</em> <em>e</em> <em>s</em><em>e</em><em>j</em><em>a</em> <em>d</em><sub><em>S</em></sub> <em>a</em> <em>m</em><em>é</em><em>t</em><em>r</em><em>i</em><em>c</em><em>a</em> <em>d</em><em>a</em> <em>p</em><em>a</em><em>l</em><em>a</em><em>v</em><em>r</em><em>a</em>. <em>D</em><em>e</em><em>f</em><em>i</em><em>n</em><em>i</em><em>m</em><em>o</em><em>s</em> <em>a</em> <em>bola
+de
+palavras</em> <em>d</em><em>e</em> <em>r</em><em>a</em><em>i</em><em>o</em> <em>n</em> <em>e</em> <em>c</em><em>e</em><em>n</em><em>t</em><em>r</em><em>o</em> <em>n</em><em>o</em> <em>e</em><em>l</em><em>e</em><em>m</em><em>e</em><em>n</em><em>t</em><em>o</em> <em>n</em><em>e</em><em>u</em><em>t</em><em>r</em><em>o</em> <em>e</em> ∈ <em>G</em> <em>s</em><em>e</em><em>n</em><em>d</em><em>o</em></span></p>
+
+<p align="center"><span
+class="math display"><em>B</em><sub><em>G</em></sub>(<em>n</em>) = {<em>g</em> ∈ <em>G</em> : <em>d</em><sub><em>S</em></sub>(<em>e</em>,<em>g</em>) ≤ <em>n</em>}.</span></p>
+
+
+<p><span class="math display"><em>A</em> <em>função de crescimento de um
+grupo</em> <em>G</em> <em>f</em><em>i</em><em>n</em><em>i</em><em>t</em><em>a</em><em>m</em><em>e</em><em>n</em><em>t</em><em>e</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em> <em>p</em><em>o</em><em>r</em> <em>S</em> = {<em>s</em><sub>1</sub>, …, <em>s</em><sub><em>k</em></sub>} <em>é</em> <em>a</em> <em>f</em><em>u</em><em>n</em><em>ç</em><em>ã</em><em>o</em> <em>γ</em> : ℕ<sup>+</sup> &#10141; ℕ<sup>+</sup> <em>q</em><em>u</em><em>e</em> <em>a</em><em>s</em><em>s</em><em>o</em><em>c</em><em>i</em><em>a</em> <em>a</em> <em>c</em><em>a</em><em>d</em><em>a</em> <em>n o</em> <em>n</em><em>ú</em><em>m</em><em>e</em><em>r</em><em>o</em> <em>d</em><em>e</em> <em>p</em><em>a</em><em>l</em><em>a</em><em>v</em><em>r</em><em>a</em><em>s</em> <em>d</em><em>e</em> <em>c</em><em>o</em><em>m</em><em>p</em><em>r</em><em>i</em><em>m</em><em>e</em><em>n</em><em>t</em><em>o</em> <em>a</em><em>t</em><em>é</em> <em>n</em> <em>e</em><em>m</em> <em>G</em> <em>dada por</em> <em>γ</em><sub><em>G</em></sub><sup><em>S</em></sup>(<em>n</em>) = |<em>B</em><sub><em>G</em></sub>(<em>n</em>)|.</span></p>
+
+
+
+
+<!-- assume chapter 2 before -->
+
+<section id="chapter2">
+
+<header>
+<h1>Exemplos</h1>
+</header>
+
+
+
+<p><span
+class="math display"><em>1 - S</em><em>e</em><em>j</em><em>a</em> <em>G</em> = ℤ <em>o</em> <em>g</em><em>r</em><em>u</em><em>p</em><em>o</em> <em>a</em><em>d</em><em>i</em><em>t</em><em>i</em><em>v</em><em>o</em> <em>g</em><em>e</em><em>r</em><em>a</em><em>d</em><em>o</em> <em>p</em><em>o</em><em>r</em> <em>S</em> = {1,  − 1}.</span></p>
+
+
+
+
+<ol style="color:red">
+
+<li> <span
+class="math display"><em>γ</em><sub><em>G</em></sub><sup><em>S</em></sup>(1) = |{−1,0,1}| = 3, <em>c</em><em>o</em><em>m</em> <em>o</em><em>s</em> <em>c</em><em>o</em><em>m</em><em>p</em><em>r</em><em>i</em><em>m</em><em>e</em><em>n</em><em>t</em><em>o</em><em>s</em> <em>d</em><em>a</em><em>s</em> <em>p</em><em>a</em><em>l</em><em>a</em><em>v</em><em>r</em><em>a</em><em>s</em> <em>s</em><em>e</em><em>n</em><em>d</em><em>o: </em> ℓ<sub><em>S</em></sub>(−1) = ℓ<sub><em>S</em></sub>(0) = ℓ<sub><em>S</em></sub>(1) = 1</span> <br></br>
+
+
+
+<li><span
+class="math display"><em>γ</em><sub><em>G</em></sub><sup><em>S</em></sup>(2) = |{−1,−2,0,1,2}| = 5, <em>e</em> <em>v</em><em>e</em><em>j</em><em>a</em> <em>q</em><em>u</em><em>e</em> 
+ℓ<sub><em>S</em></sub>(−1) = ℓ<sub><em>S</em></sub>(0) = ℓ<sub><em>S</em></sub>(1) = 1 <em>e</em> ℓ<sub><em>S</em></sub>(−2) = ℓ<sub><em>S</em></sub>(2) = 2.</li>
+
+
+</ol>
+
+
+<p>2 -  Todo grupo finitamente gerado que contenha um semigrupo livre com dois geradores possui crescimento exponencial.</p>
+
+<p style="color:red">Seja <span class="math inline"><em>M</em></span> o semigrupo livre
+com geradores <span
+class="math inline"><em>m</em><sub>1</sub>, <em>m</em><sub>2</sub></span>.
+O crescimento <span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub></span>
+(função de crescimento de <span class="math inline"><em>G</em></span>
+restrita ao conjunto <span class="math inline"><em>M</em></span>) é da
+seguinte forma: note que sequência abaixo forma uma progressão
+geométrica. Consequentemente, podemos calcular a função de crescimento
+pela fórmula progressão geométrica.</p>
+
+<ul style="color:red">
+
+<li><p ><span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(1) = |{<em>a</em>,<em>b</em>}| = 2<sup>1</sup></span></p></li>
+<li><p><span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(2) = |{<em>a</em>,<em>b</em>,<em>a</em><em>b</em>,<em>b</em><em>a</em>,<em>a</em><sup>2</sup>,<em>b</em><sup>2</sup>}| = 6 = (2<sup>1</sup>+2<sup>2</sup>)</span></p></li>
+<li><p><span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(3) = |{<em>a</em>,<em>b</em>,<em>a</em><em>b</em>,<em>b</em><em>a</em>,<em>a</em><sup>2</sup>,<em>b</em><sup>2</sup>,<em>a</em><sup>2</sup><em>b</em>,<em>b</em><em>a</em><sup>2</sup>,<em>a</em><em>b</em><sup>2</sup>,<em>b</em><sup>2</sup><em>a</em>,<em>a</em><em>b</em><em>a</em>,<em>b</em><em>a</em><em>b</em>,<em>a</em><sup>3</sup>,<em>b</em><sup>3</sup>}| = 13 = (2<sup>1</sup>+2<sup>2</sup>+2<sup>3</sup>)</span></p></li>
+<li><p><span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(4) = |{<em>a</em>,<em>b</em>,<em>a</em><em>b</em>,<em>b</em><em>a</em>,<em>a</em><sup>2</sup>,<em>a</em><em>b</em><sup>2</sup>,<em>b</em><sup>2</sup><em>a</em>,<em>a</em><sup>3</sup>,<em>b</em><sup>3</sup>,…,<em>a</em><sup>4</sup>,<em>b</em><sup>4</sup>}| = 29 = (2<sup>1</sup>+2<sup>2</sup>+2<sup>3</sup>+2<sup>4</sup>)</span></p>
+<p>     <span class="math inline">⋮</span></p></li>
+
+</ul>
+
+<p style="color:red" >Assim, temos <span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(<em>n</em>) = 2<sup><em>n</em> + 1</sup> − 2</span>.
+Seja <span class="math inline"><em>G</em></span> um grupo contendo <span
+class="math inline"><em>M</em></span>. Agora, tome um gerador <span
+class="math inline"><em>S</em></span> de <span
+class="math inline"><em>G</em></span> contendo <span
+class="math inline"><em>m</em><sub>1</sub>, <em>m</em><sub>2</sub></span>.
+Como <span
+class="math inline"><em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(<em>n</em>) = 2<sup><em>n</em> + 1</sup> − 2</span>,
+logo obtemos <span
+class="math inline"><em>γ</em><sub><em>G</em></sub>(<em>n</em>) ≥ <em>γ</em><sub><em>G</em>|<sub><em>M</em></sub></sub>(<em>n</em>)</span>,
+ou seja, <span
+class="math inline"><em>γ</em><sub><em>G</em></sub> ≽ 2<sup><em>n</em> + 1</sup> − 2</span>.</p> <br></br>
+
+
+
+
+
+</body>
+
+
+
+	<footer>
+		<hr>
+		<p style="color:blue;"> Feito por: Ezequiel Souza</p>
+		<p style="color:blue;"> E-mail: <a style="color:blue;" href="mailto:ezequiel.es608@gmail.com"> ezequiel.es608@gmail.com </a> </p>
+
+
+	</footer>
+
+
+
+
+
+</html>
